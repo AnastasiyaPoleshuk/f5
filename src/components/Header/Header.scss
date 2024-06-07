@@ -1,0 +1,35 @@
+@import '../../App.variables.scss';
+
+.header {
+  background: $black-color;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__container {
+  @include display-flex;
+  padding: 30px;
+
+  .header__title {
+    @include h3;
+    color: $red-color;
+    text-decoration: none;
+  }
+
+  .header__nav {
+    @include display-flex;
+    gap: 40px;
+  }
+
+  .header__nav-item,
+  .header__tel {
+    text-decoration: none;
+    color: $white-color;
+    transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+    &:hover {
+      color: $red-color;
+    }
+  }
+}

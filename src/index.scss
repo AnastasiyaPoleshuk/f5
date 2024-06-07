@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@600;900&family=Underdog&display=swap');
+@import './App.variables.scss';
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  justify-content: center;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: $bg-color;
+  @include font;
+}
+
+#root {
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+[class*='__container'] {
+  width: $main-width;
+  position: relative;
+
+  //   @media (max-width: 768px) {
+  //     width: 640px;
+  //   }
+
+  //   @media (max-width: 400px) {
+  //     width: 300px;
+  //   }
+
+  //   @media (max-width: 360px) {
+  //     width: 288px;
+  //   }
+}

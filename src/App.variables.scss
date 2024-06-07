@@ -1,0 +1,83 @@
+$body-1-font: 16px;
+$body-2-font: 20px;
+$body-3-font: 26px;
+$title-1-font: 32px;
+$title-2-font: 48px;
+$title-3-font: 55px;
+$font-family: 'Underdog', cursive;
+
+$bg-color: #131313;
+$black-color: #030303;
+$red-color: #862121;
+$white-color: #d5d5d5;
+$gray-color: #a6a6a6;
+$red-gradient-1-color: #3a0202;
+$red-gradient-2-color: #760606;
+
+$main-width: 1400px;
+$main-width-mobile: 375px;
+
+@mixin font {
+  font-family: $font-family;
+  font-size: $body-2-font;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: $white-color;
+}
+
+@mixin h1 {
+  font-weight: 900;
+  font-size: $title-3-font;
+  line-height: 64px;
+  letter-spacing: 0.2px;
+}
+
+@mixin h2 {
+  font-weight: 600;
+  font-size: $title-2-font;
+  line-height: 54px;
+}
+
+@mixin h3 {
+  font-weight: 700;
+  font-size: $title-1-font;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
+@mixin body-large {
+  font-weight: 400;
+  font-size: $body-3-font;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+@mixin body-medium {
+  font-weight: 400;
+  font-size: $body-2-font;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+
+@mixin body-small {
+  font-weight: 400;
+  font-size: $body-1-font;
+  line-height: 18px;
+  letter-spacing: 0.1px;
+}
+
+@mixin button {
+  @include body-medium;
+  outline: 0;
+  border: none;
+  background: linear-gradient($red-gradient-1-color, $red-gradient-2-color);
+  color: $white-color;
+  cursor: pointer;
+}
+
+@mixin display-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
