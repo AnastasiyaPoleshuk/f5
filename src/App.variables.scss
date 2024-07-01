@@ -17,6 +17,8 @@ $red-gradient-2-color: #760606;
 $main-width: 1400px;
 $main-width-mobile: 375px;
 
+$section-margin: 70px;
+
 @mixin font {
   font-family: $font-family;
   font-size: $body-2-font;
@@ -28,7 +30,7 @@ $main-width-mobile: 375px;
 
 @mixin h1 {
   font-weight: 900;
-  font-size: $title-3-font;
+  font-size: $title-3-font * 1.5;
   line-height: 64px;
   letter-spacing: 0.2px;
 }
