@@ -1,0 +1,22 @@
+@import '../../App.variables.scss';
+
+.questPreview__section {
+  width: $main-width;
+  margin-top: $section-margin;
+
+  .questPreview__title {
+    @include h1;
+  }
+
+  .questPreview__subtitle {
+    @include body-medium;
+    font-style: italic;
+    margin: 50px 0 70px 0;
+  }
+
+  .questPreview__cards-wrapp {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+}
